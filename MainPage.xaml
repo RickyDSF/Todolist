@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="TodoList.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage Title="Distância">
+        <VerticalStackLayout Padding="20">
+            <Entry x:Name="distanceEntry" Placeholder="Digite o valor a ser convertido" />
+            <Picker x:Name="distanceFromPicker" Title="De"/>
+            <Picker x:Name="distanceToPicker" Title="Para"/>
+            <Button Text="Converter" Clicked="OnConvertDistance"/>
+            <Label x:Name="distanceResultLabel"/>
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Peso">
+        <VerticalStackLayout Padding="20">
+            <Entry x:Name="weightEntry" Placeholder="Digite o valor a ser convertido" />
+            <Picker x:Name="weightFromPicker" Title="De"/>
+            <Picker x:Name="weightToPicker" Title="Para"/>
+            <Button Text="Converter" Clicked="OnConvertWeight"/>
+            <Label x:Name="weightResultLabel"/>
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Temperatura">
+        <VerticalStackLayout Padding="20">
+            <Entry x:Name="temperatureEntry" Placeholder="Digite o valor a ser convertido" />
+            <Picker x:Name="temperatureFromPicker" Title="De"/>
+            <Picker x:Name="temperatureToPicker" Title="Para"/>
+            <Button Text="Converter" Clicked="OnConvertTemperature"/>
+            <Label x:Name="temperatureResultLabel"/>
+        </VerticalStackLayout>
+    </ContentPage>
+
+</TabbedPage>
